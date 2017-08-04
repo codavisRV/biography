@@ -12,6 +12,6 @@ nav.addEventListener("click", resetNav);
 
 function resetNav () {
     nav.style.display = "none";
-    exit.style.display = "block";
+    exit.style.display = "none";
     hamburger.style.display = "block";
 }
