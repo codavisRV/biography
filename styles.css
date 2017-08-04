@@ -81,7 +81,9 @@ nav a {
     display: none;
 }
 
-
+#close-icon {
+    display: none;
+    }
 
 
 
@@ -213,7 +215,7 @@ Media Queries
         display: none;
     }
 
-    nav #hamburger {
+    #hamburger {
     height: 100%;
     width: 100%;
     margin: auto;
@@ -227,6 +229,7 @@ Media Queries
         width: 100%;
         height: 90%;
         margin: auto;
+        display: block;
     }
 
 
