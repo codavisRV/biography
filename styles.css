@@ -209,7 +209,7 @@ Media Queries
 //////////////////////*/
 
 @media (max-width: 600px) {
-    /*#desktop-nav {
+    #desktop-nav {
         display: none;
     }
 
@@ -228,7 +228,6 @@ Media Queries
         height: 90%;
         margin: auto;
     }
-    */
 
 
     .codepen-gallery  {
