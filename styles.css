@@ -1,0 +1,248 @@
+/*//////////////////////
+General
+//////////////////////*/
+* {
+    box-sizing: border-box;
+}
+
+#nameplate {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    color: #68B9A8;
+    text-align: center;
+}
+
+#banner {
+    max-width: 100%;
+    margin: -10px 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    color: #666;
+}
+
+#homeCopy h2 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #289b84;
+}
+
+#bodyCopy {
+    max-width: 70%;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+footer {
+    background: #289b84;
+    color: #fff;
+    padding: 10px auto;
+    margin: 10px auto;
+}
+
+/*//////////////////////
+Shared styles
+//////////////////////*/
+
+.cleared {
+    clear: both;
+}
+
+
+/*//////////////////////
+Nav
+//////////////////////*/
+nav {
+    background: #289b84;
+    margin: 10px auto;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    color: #fff;
+    width: 16%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    width: 16%;
+}
+
+#selected {
+    background: #68B9A8;
+}
+
+#hamburger {
+    display: none;
+}
+
+
+
+
+
+/*//////////////////////
+Page: About
+//////////////////////*/
+
+#headshot {
+    border-radius: 10%;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+/*//////////////////////
+Page: Resume
+//////////////////////*/
+
+.resumeCopy {
+    text-align: left;
+}
+
+.list-header {
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    text-align: left;
+    font-size: 1.25em;
+    text-indent: -20px;
+    margin: 15px 0 0 0;
+}
+
+.list-subhead {
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    text-align: left;
+    font-size: 1.1em;
+    text-indent: -20px;
+    margin: 5px 0 0 0;
+
+}
+
+.resume-section {
+    display: inline-block;
+    margin: 0 2.5%;
+    max-width: 100%;
+}
+
+/*//////////////////////
+Page: Projects
+//////////////////////*/
+
+.codepen-img {
+    max-width: 100%;
+}
+
+.codepen-gallery a {
+    text-decoration: none;
+}
+
+.codepen-gallery a:visited, a:link {
+    color: #fff;
+}
+
+.codepen-gallery {
+    width: 90%;
+    margin: auto;
+}
+
+.pen {
+    background-color: #68B9A8;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    display: inline-block;
+
+}
+
+.pen p {
+    margin: 5px 0;
+}
+
+
+/*//////////////////////
+Page: Gallery
+//////////////////////*/
+
+.gallery-section img {
+    max-width: 30%;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.gallery-section h2 {
+    clear: both;
+}
+
+#photo-wrapper-people,
+#photo-wrapper-places {
+    background-color: #68B9A8;
+    color: white;
+    margin: 10px;
+}
+
+
+/*//////////////////////
+Footer
+//////////////////////*/
+
+.logo {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 30%;
+}
+
+
+/*//////////////////////
+Media Queries
+//////////////////////*/
+
+@media (max-width: 600px) {
+    /*#desktop-nav {
+        display: none;
+    }
+
+    nav #hamburger {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: #289b84;
+    display: block;
+    }
+
+    #hamburger-icon {
+        color: white;
+        font-size: 1em;
+        width: 100%;
+        height: 90%;
+        margin: auto;
+    }
+    */
+
+
+    .codepen-gallery  {
+        width: 100%;
+        margin: auto;
+    }
+
+    .pen {
+        width: 100%;
+    }
+    
+    .gallery-section img {
+        max-width: 80%;
+    }
+    
+}
+
