@@ -1,16 +1,17 @@
 var nav = document.getElementById("desktop-nav");
 var hamburger = document.getElementById("hamburger-icon");
 var exit = document.getElementById("close-icon");
-console.log(nav);
-console.log(hamburger);
 hamburger.addEventListener("click", function() {
     nav.style.display = "block";
     exit.style.display = "block";
     hamburger.style.display = "none";
 });
 
-exit.addEventListener("click", function() {
+exit.addEventListener("click", resetNav)
+nav.addEventListener("click", resetNav);
+
+function resetNav () {
     nav.style.display = "none";
-    exit.style.display = "none";
+    exit.style.display = "block";
     hamburger.style.display = "block";
-})
+}
