@@ -175,12 +175,24 @@ Page: Projects
 Page: Gallery
 //////////////////////*/
 
-.gallery-section img {
+.photo-with-overlay {
     max-width: 30%;
     display: inline-block;
     margin: 10px;
+    position: relative;
 
 }
+
+.gallery-section img {
+    max-width: 100%;
+}
+
+.caption {
+    position: absolute;
+    max-width: 100%;
+    z-index: 99;
+}
+
 
 .gallery-section h2 {
     clear: both;
@@ -192,6 +204,8 @@ Page: Gallery
     color: white;
     margin: 10px;
 }
+
+
 
 
 /*//////////////////////
