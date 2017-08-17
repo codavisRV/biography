@@ -131,7 +131,7 @@ Page: Resume
 .resume-section {
     display: inline-block;
     margin: 0 2.5%;
-    max-width: 100%;
+    max-width: 30%;
 }
 
 /*//////////////////////
@@ -168,6 +168,10 @@ Page: Projects
 
 .pen p {
     margin: 5px 0;
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 1.1em;
+    
 }
 
 
@@ -175,37 +179,83 @@ Page: Projects
 Page: Gallery
 //////////////////////*/
 
-.photo-with-overlay {
+.photo-with-caption {
     max-width: 30%;
     display: inline-block;
     margin: 10px;
     position: relative;
-
 }
+
 
 .gallery-section img {
     max-width: 100%;
 }
 
 .caption {
-    position: absolute;
+    position: relative;
     max-width: 100%;
     z-index: 99;
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 1.1em;
 }
 
 
 .gallery-section h2 {
     clear: both;
+    padding: 10px 10px;
+
 }
+
 
 #photo-wrapper-people,
 #photo-wrapper-places {
     background-color: #68B9A8;
     color: white;
     margin: 10px;
+    position: absolute;
+    top: 400px;
+    left: 40px;
 }
 
+#photo-wrapper-places {
+    z-index: 1;
+}
 
+#photo-wrapper-people {
+    z-index: 10;
+}
+
+/*//////////////////////
+Page: Contact
+//////////////////////*/
+
+input {
+    border:none;
+    border: 1px solid #666;
+    padding: 5px;
+    margin: 10px;
+}
+
+input, 
+textarea {
+    display: block;
+    margin: 10px auto;
+    text-align: left;
+    border-color: #289b84;
+    
+}
+
+input:focus, 
+textarea:focus {
+    background-color: rgba(104, 185, 168, 0.2);
+    outline: none;
+}
+
+#submit-btn {
+    background-color: rgba(104, 185, 168, 0.3);
+    border-color: #289b84;
+}
 
 
 /*//////////////////////
@@ -225,6 +275,14 @@ Media Queries
 //////////////////////*/
 
 @media (max-width: 600px) {
+    /*/////
+    Mobile General
+    /////*/
+
+    body {
+        font-size: 0.875em;
+    }
+
     /*/////
     Mobile Nav
     /////*/
@@ -260,15 +318,12 @@ Media Queries
     /*/////
     Mobile Gallery
     /////*/
-    .codepen-gallery  {
-        width: 100%;
-        margin: auto;
+    
+    .photo-with-overlay {
+    max-width: 90%;
     }
 
     
-    .gallery-section img {
-        max-width: 80%;
-    }
     
     /*/////
     Mobile Projects
@@ -277,5 +332,16 @@ Media Queries
         width: 100%;
     }
     
+    .codepen-gallery  {
+        width: 100%;
+        margin: auto;
+    }
+    
+    /*/////
+    Mobile Resume
+    /////*/
+    .resume-section {
+        max-width: 90%;
+    }
 }
 

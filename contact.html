@@ -36,23 +36,23 @@
         <section id="homeCopy">
             <h2>Want to contact me?</h2>
             <form>
-                <label>Name: </label>
-                <br> 
+                <label class="form-label">Name: </label> <!--add label "for" attribs.-->
                 <input type="text" name="name">
-                <br>
-                <label>Email: </label>
-                <br>
+                <label class="form-label">Email: </label>
                 <input type="email" name="email">
-                <br>
-                <label>Your message: </label>
-                <br>
+                <label class="form-label">Phone: </label>
+                <input type="tel" name="phone">
+                <label class="form-label">Your message: </label>
                 <textarea name="message" rows="4" cols="20"></textarea>
-                <br>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="submit-btn">
             </form>
         </section>
         <footer class="cleared">
-            &copy; Courtney Price Davis 2017
+            <a href="http://twitter.com/cpricedavis" target="_blank"><img  class="logo" src="img/tw-logo.png"></a>
+            <a href="https://www.linkedin.com/in/courtney-davis-73589238/" target="_blank"><img  class="logo" src="img/in-logo.png"></a>
+            <a href="http://www.road2hire.org" target="_blank"><img class="logo" src="img/r2hlogo.png"></a>
+            <br>
+            <p>&copy; Courtney Price Davis 2017</p>
         </footer>
         <script src="script.js"></script>
     </body>     
