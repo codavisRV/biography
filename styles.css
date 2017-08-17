@@ -130,8 +130,8 @@ Page: Resume
 
 .resume-section {
     display: inline-block;
-    margin: 0 2.5%;
-    max-width: 30%;
+    margin: 0 20px;
+    width: 30%;
 }
 
 /*//////////////////////
@@ -341,7 +341,7 @@ Media Queries
     Mobile Resume
     /////*/
     .resume-section {
-        max-width: 90%;
+        width: 90%;
     }
 }
 
