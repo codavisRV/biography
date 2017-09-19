@@ -179,13 +179,65 @@ Page: Projects
 Page: Gallery
 //////////////////////*/
 
+.wrapper {
+    position: relative;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+}
+
+.wrapper a:hover {
+    transform: translate(0, -1px);
+}
+
+#tab1, #tab2 {
+    max-width: 10%;
+    display: inline;
+    clear: both;
+    padding: 10px 10px;
+    background-color: #68B9A8;
+    margin: 10px -15px 10px 10px;
+
+}
+
+#tab1 {
+    border-right: solid 2px #666;
+}
+
+.active {
+    color: white;
+    
+}
+
+#photo-wrapper-1,
+#photo-wrapper-2 {
+    background-color: #68B9A8;
+    color: white;
+    margin: 0 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+#photo-wrapper-1 {
+    position: relative;
+}
+
+#photo-wrapper-2 {
+    display: none;
+}
+
 .photo-with-caption {
     max-width: 30%;
     display: inline-block;
     margin: 10px;
     position: relative;
 }
-
 
 .gallery-section img {
     max-width: 100%;
@@ -201,30 +253,6 @@ Page: Gallery
 }
 
 
-.gallery-section h2 {
-    clear: both;
-    padding: 10px 10px;
-
-}
-
-
-#photo-wrapper-people,
-#photo-wrapper-places {
-    background-color: #68B9A8;
-    color: white;
-    margin: 10px;
-    position: absolute;
-    top: 400px;
-    left: 40px;
-}
-
-#photo-wrapper-places {
-    z-index: 1;
-}
-
-#photo-wrapper-people {
-    z-index: 10;
-}
 
 /*//////////////////////
 Page: Contact
@@ -274,6 +302,15 @@ Footer
 Media Queries
 //////////////////////*/
 
+@media (min-width: 601px) {
+    #desktop-nav {
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
 @media (max-width: 600px) {
     /*/////
     Mobile General
@@ -291,11 +328,11 @@ Media Queries
     }
 
     #hamburger {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background-color: #289b84;
-    display: block;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-color: #289b84;
+        display: block;
     }
 
     #hamburger-icon {
